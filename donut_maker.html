@@ -1,0 +1,195 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+  <meta charset="UTF-8"/>
+  
+  <title>Popączkowani</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/donut_css.css"/>
+    <script src="js.js"></script>
+  
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--Favicon w ikonie strony-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16"  href="pics/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="website">
+  
+  <div class="baner">
+  
+  <img id="logo" src="pics/logo.png">
+  
+  </div>
+  
+  <div class="menu">
+    
+	<ul>
+       <li><a href="index.html" class="element">Strona Główna</a></li>
+	   <li><a href="donut_maker.html" class="element">Donut Maker</a></li>
+	   <li><a href="menu.html" class="element">Menu</a></li>
+	   <li><a href="kontakt.html" class="element">Kontakt</a></li>
+	   <li><a href="o_nas.html" class="element">O Nas</a></li>
+	</ul>
+	   
+  </div>
+  
+  <div class="content fade">
+  
+   <div class="lewy fade">
+   
+     <h1>Donut Maker</h1>
+
+       <form method="post" action="formularz_rob.php">
+       
+       <div class="kat1"> <h3>Rodzaj masy (wybór obowiązkowy)</h3>
+	 <p> <input type="radio" name="masa" value="tradycyjna" checked="checked">tradycyjna</p>
+	 <p> <input type="radio" name="masa" value="kakaowa">kakaowa</p>
+	 <p> <input type="radio" name="masa" value="dyniowa">dyniowa</p>
+	 <p> <input type="radio" name="masa" value="wege">wege</p>
+           <p><button type="button" onClick="zmianaMasy(); dodanieVege()">Zmień masę</button></p>
+           </div>
+     
+
+       
+       <div class="kat2"> <h3>Nadzienie</h3>
+           <p> <input type="radio" name="nadzienie" value="brak" checked="checked">brak</p>
+	 <p> <input type="radio" name="nadzienie" value="czekolada">czekolada</p>
+	 <p> <input type="radio" name="nadzienie" value="roza">róża</p>
+	 <p> <input type="radio" name="nadzienie" value="dzem_truskawka">dżem truskawkowy</p>
+	 <p> <input type="radio" name="nadzienie" value="dzem_wisnia">dżem wiśniowy</p>
+           <p> <input type="radio" name="nadzienie" value="banan">banan</p>
+           <p> <input type="radio" name="nadzienie" value="dynia">dynia</p>
+<p><button type="button" onClick="zmianaNadzienia()">Zmień nadzienie</button></p>
+           </div>
+     
+         <div class="kat3">
+            <h3>Wierzch</h3>
+	 <p> <input type="radio" name="wierzch" value="brak" checked="checked">brak</p>
+	 <p> <input type="radio" name="wierzch" value="cukier_puder">cukier puder</p>
+	 <p> <input type="radio" name="wierzch" value="lukier">lukier</p>
+	 <p> <input type="radio" name="wierzch" value="czekolada">czekolada</p>
+    <p> <input type="radio" name="wierzch" value="wisnia">wiśnia</p>
+             <p><button type="button" onClick="zmianaPolewy()">Zmień wierzch</button></p>
+             
+    </div>
+       
+        <div class="kat4">
+            <h3>Posypka</h3>
+            <p> <input type="radio" name="posypka" value="brak" checked="checked">brak</p>
+	 <p> <input type="radio" name="posypka" value="skorka">skórka pomarańczy</p>
+	 <p> <input type="radio" name="posypka" value="wiorki_czekolada">wiórki czekoladowe</p>
+	 <p> <input type="radio" name="posypka" value="wiorki_kokos">wiórki kokosowe</p>
+	 <p> <input type="radio" name="posypka" value="orzeszki">orzeszki</p>
+     <p> <input type="radio" name="posypka" value="teczowa">tęczowa posypka</p>
+            <p><button type="button" onClick="zmianaPosypki()">Zmień posypkę</button></p>
+    
+		<br/>
+</div>
+           
+		<div class="kat5">
+            
+		<p>Cena pączka wynosi:</p>
+            <p><input readonly type="text" id="cena_id" name="cena" value="4.99" ></p>
+            
+     
+     <br/><br/><br/>
+            <!-- <p>Cena pączka: </p>
+            <p><input type="text" id="cena" name="cena" value="4.99" disabled></p> -->
+      
+    <button type="submit">Przejdź do realizacji zamówienia</button>&nbsp;&nbsp;&nbsp;
+	<button type="reset">Wyczyść wybory</button>
+	
+    </div>
+	
+    
+       </form>
+   
+   </div>
+   
+   <div class="prawy fade">
+           
+       <div id="donut_image">
+           <img id="donut_start" src="pics/donutnic.png">
+        <img id="donut_masa">
+           <img id="donut_polewa" class="donut_absolute">
+           <img id="donut_posypka">
+           <img id="donut_nadzienie"> 
+           <img id="donut_vege">
+       </div>
+       
+       
+	   
+     
+       <div class="instrukcja">
+       <h1>Jak stworzyć swojego pączka?</h1>
+        <ol class="instru">
+         <li class="instru">1. Wybierz każdy z elementów klikając jedną z dostępnych opcji</li><br/>
+            <li class="instru">2. Podaj dane do odbioru</li><br/>
+            <li class="instru">3. Poczekaj, aż zamówienie będzie gotowe</li><br/>
+            <li class="instru">4. Delektuj się swoim wymarzonym pączkiem!</li><br/>
+        </ol>
+    </div>
+       
+   </div>
+  
+    
+      
+  </div>
+  
+  <div class="footer">
+      
+      <div class="godziny">
+        <h3>Godziny otwarcia</h3> 
+      <p> Poniedziałek - Piątek : 8<sup>00</sup> - 22.00<sup>00</sup> </p>
+        <p> Sobota : 9<sup>30</sup> - 20<sup>30</sup> </p>
+        <p> Niedziela : Nieczynne</p>
+      
+      </div>
+      
+      <div class="info">
+        <h3>Informacje kontaktowe</h3> 
+      <p>SNJ Sp.z o.o <br/>
+          ul. Jagiellońska 100
+          43-432 Sosnowiec
+          </p>
+      <p>Numer tel. : 544 789 006</p>
+      <p>adres e-mail: popaczkowani.donuty@gmail.com</p>
+      </div>
+      
+  </div>
+  
+  </div>
+  
+    <script>
+    
+         window.onbeforeunload = function () {
+          return 'Are you really want to perform the action?';}
+    </script>
+    
+</body>
+    
+
+
+</html>

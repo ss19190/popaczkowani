@@ -1,0 +1,168 @@
+body{
+	color:black;
+	margin:0px;
+    background-color: #E8DED1;
+   font-family: 'Lato', sans-serif;
+  
+   
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 2vw;
+    color: #2D2625;
+}
+
+.website{
+	
+}
+
+.baner{
+	background-color: #302B29;
+	width: 100%;
+   height: 20%;
+	float:left;
+}
+
+#logo{
+	max-width:100%;
+	display: block;
+   position: relative;
+    margin: auto;
+  height:100%;
+
+}
+
+
+.menu{
+   
+    clear: both;
+    height: 50px;
+	background-color: #2D2625;
+	font-family: 'Kanit', sans-serif;
+    text-align:center;
+    margin-bottom: 0%;
+    font-size: 1vw;
+}
+
+a{
+	color: white;
+	text-decoration:none;
+    text-align:center;
+}
+
+.menu li{
+   
+   
+	display: inline-block;
+    margin-right:10%;
+	text-align:center;
+	
+}
+
+
+ul li{
+    
+     padding: 10px;
+	display: inline;
+	text-align:center;
+	list-style:none;
+}
+
+ul{
+    
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content{
+	clear:both;
+   
+}
+
+.zamowienie{
+    width: 70%;
+    float:left;
+    padding-left: 4vw;
+    padding-bottom: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 15%;
+    background-color: #ede7de;
+    border-radius: 25px;
+    font-size: 1vw;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="tel"], input[type="date"] textarea {
+    width: 10vw;
+    height: 1.5vw;
+    padding: 0.5vw;
+    margin-top: 0.25vw;
+    background-color : #f6f3ef;
+    border-radius: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+}
+
+.footer{
+    
+    clear: both;
+    height: 10vw;
+	background-color: #2D2625;
+	font-family: 'Kanit', sans-serif;
+    text-align:center;
+    margin-top: -50px;
+    font-size: 1vw;
+    background-color: #2D2625;
+}
+
+.godziny{
+	display: inline-block;
+    margin-right:10%;
+    font-size: 0.7vw;
+	text-align:center;
+	color:white;
+}
+
+.info{
+		
+		display: inline-block;
+    font-size: 0.7vw;
+	text-align:center;
+	color: white;
+}
+
+
+button{
+    font-size: 0.8vw;
+    width: 5vw;
+    text-align: center;
+    background-color : #f6f3ef;
+    border-color: #f6f3ef;
+    color: #2D2625;
+    font-family: 'Pacifico', cursive;
+    border-radius: 25%;
+    padding: 0.2vw;
+}
+
+
+

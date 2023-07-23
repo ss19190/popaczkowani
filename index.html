@@ -1,0 +1,191 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+  <meta charset="UTF-8"/>
+  
+  <title>Popączkowani</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/strona_glowna_css.css"/>
+
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--Favicon w ikonie strony-->
+    
+    
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16"  href="pics/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  
+  
+</head>
+
+<body>
+
+  <div class="website">
+  
+  <div class="baner">
+  
+  <img id="logo" src="pics/logo.png">
+  
+  </div>
+  
+  <div class="menu">
+    
+	<ul>
+       <li><a href="index.html">Strona Główna</a></li>
+	   <li><a href="donut_maker.html">Donut Maker</a></li>
+	   <li><a href="menu.html">Menu</a></li>
+	   <li><a href="kontakt.html">Kontakt</a></li>
+	   <li><a href="o_nas.html">O Nas</a></li>
+	</ul>
+	   
+  </div>
+  
+  <div class="content">
+  
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+      
+    <div class="numbertext">1 / 3</div>
+    <img src="pics/PopaczkowanieSlider2.jpg" style="width:100%">
+      
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="pics/slider2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+      
+    <div class="numbertext">3 / 3</div>
+    <img src="pics/slider3.png" style="width:100%">
+      
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+    
+</div>
+      
+      <script>
+      
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+}
+          
+      </script>
+  
+     <div id="blank"></div>
+     
+   
+      <img src="pics/quality.png" class="qualities fade">
+          <img src="pics/fresh.png" class="qualities fade">
+          <img src="pics/choice.png" class="qualities fade">
+        
+
+      <p class="qualities2 fade">Najwyższa jakość składników &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Pewność świeżości wypieków &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Szeroki wybór produktów</p>
+      
+	  
+	  <div class="historia fade">
+	    <h1>Poznaj naszą historię</h1>
+          <p id="historia_p">Zaczęliśmy nispełna 5 lat temu jako grupa pasjonatów, która postanowiła podzielić się ze światem cudem jakim są pączki z dziurką. Planując jednak nasz biznes chcieliśmy postawić na oryginalność. Wpadliśmy więc na pomysł daniu wolnej ręki klientowi pod względem kompozycji elementów naszych wypieków. Zależało nam, aby niezależnie od preferencji każdy opuszczał nasz lokal z uśmiechem na ustach i pączkiem w torebcę. Sukces zapewnił nam możliwość dalszego rozwoju i otwarcia kolejnych pączkarni. Mimo powiększenia naszej marki, wciąż traktujemy się jako mały biznes, który pozwala nam na dzielenie się naszą pasją.</p>
+          
+          <img id="polaroid" src="pics/polaroid.png">
+	  </div>
+
+      <div class="zacheta">
+           <h2>Zachęcamy do przetestowania i złożenia zamówienia w donut makerze</h2>
+        <h2>Stwórz własnego pączka!</h2>
+          <p id="zacheta_p">Kakaowy donut z musem bananowym w kształcie gwiazdy? A może dyniowa masa z czekoladą i orzeszkami na wierzch? <br/>Ty wybierasz!</p>
+      </div>
+      
+      </div>
+      
+      
+ 
+  
+  <div class="footer">
+      
+      <div class="godziny">
+        <h3>Godziny otwarcia</h3> 
+      <p> Poniedziałek - Piątek : 8<sup>00</sup> - 22.00<sup>00</sup> </p>
+        <p> Sobota : 9<sup>30</sup> - 20<sup>30</sup> </p>
+        <p> Niedziela : Nieczynne</p>
+      
+      </div>
+      
+      <div class="info">
+        <h3>Informacje kontaktowe</h3> 
+      <p>SNJ Sp.z o.o <br/>
+          ul. Jagiellońska 100
+          43-432 Sosnowiec
+          </p>
+      <p>Numer tel. : 544 789 006</p>
+      <p>adres e-mail: popaczkowani.donuty@gmail.com</p>
+      </div>
+      
+  </div>
+      
+  </div>
+  
+</body>
+
+</html>
